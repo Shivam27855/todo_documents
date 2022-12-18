@@ -1,0 +1,30 @@
+POST
+Body-> raw-> JSON
+http://localhost:5000/getUser
+{
+    "username": "root",
+    "password": "root"
+}
+
+POST
+Body-> raw-> JSON
+http://localhost:5000/addUser
+{
+    "username": "root",
+    "password": "root"
+}
+
+POST
+http://localhost:5000/addTodoItem
+{
+    "todoItem":"Jogging"
+}
+
+GET
+http://localhost:5000/deleteTodoItem/4
+
+POST
+http://localhost:5000/editTodoItem/5
+{
+    "todoItem":"Watch TOP GUN"
+}

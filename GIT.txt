@@ -1,0 +1,103 @@
+Note:
+"" = Enter your text between them. Dont remove them.
+`` = Replace those marks with your text
+
+Reference URL:
+https://www.w3schools.com/git/
+https://www.geeksforgeeks.org/git-origin-master/
+https://blog.webdevsimplified.com/2021-10/advanced-git-commands/
+https://hemantajax-2.gitbook.io/git-basics/branching
+https://www.w3schools.com/git/exercise.asp
+https://www.atlassian.com/git/glossary/terminology
+https://www.atlassian.com/git/glossary
+https://www.atlassian.com/git/tutorials/undoing-changes/git-revert#:~:text=The%20git%20revert%20command%20is%20a%20forward%2Dmoving%20undo%20operation,in%20regards%20to%20losing%20work.
+https://www.javatpoint.com/git-revert
+
+
+How to Setup git in your machine:
+1. Download git for this link https://git-scm.com/download/win
+2. Install git with Git Bash
+3. Setup your identity via git config
+          $ git config --global user.email "email"
+          $ git config --global user.name "username"
+
+initial process of git:
+
+git init
+git status
+git add -A
+git commit -m "Your message"
+git remote add origin `link of github repo`
+git push -u origin master
+
+Combination of git add -A and git commit -m "Your message":
+git commit -a -m "Your message"
+
+
+Used to get previous commit version of the specific file
+git checkout `name of your file`
+
+Used to get previous commit version of all files
+git checkout -f 
+
+Git branch:
+
+list all the branches:
+git branch  
+
+Create new branch:
+git branch `name of your branch`
+
+Switch to branch
+git checkout `name of your branch`
+
+Create and Switch to new branch:
+git checkout -b `name of your branch`
+
+Merge one branch(child=B) into another branch(parent=A):
+1. switch to A:
+git checkout `A`
+2. Use merge command:
+git merge `B`
+3. git push -u origin master
+
+
+Logs in github:
+=> git log -p -2
+Use q to exit from here
+
+
+How to to get the link of fetch and push of github branch:
+git remote -v
+
+
+How to change the remote url:
+git remote set-url origin "link of github repository"
+
+How to check the variable name of remote url set:
+git remote
+
+
+What is fetch and pull?
+pull is the combination of fetch and merge
+git fetch origin
+git status
+	
+git diff origin/master
+git merge origin/master
+git status
+
+pull is a combination of fetch and merge. It is used to pull all changes from a remote repository into the branch you are working on.
+
+git pull origin
+
+
+How to clone:
+git clone `remote url of git repository`
+OR
+git clone `remote url of git repository` `name as you want for this project`
+
+How to clone specific branch:
+git clone -b `branch name` `remote url of git repository`
+OR
+git clone -b `branch name` `remote url of git repository` `name as you want for this project`

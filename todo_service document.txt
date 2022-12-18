@@ -1,0 +1,5 @@
+Reference Project: Z:\Project\banking
+
+npm init //to initiate node project
+npm i express body-parser cors mysql2 //to download important modules
+node index //to run node.js server
